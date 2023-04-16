@@ -30,20 +30,22 @@ class CriminalRecord(abc.ABC):
                 raise EntityError("criminal_record_id")
         
         
-        @staticmethod
-        def validate_criminal_record_id(criminal_record_id:int) -> bool:
-            if criminal_record_id is None:
-                return False
-            elif type(criminal_record_id) != int:
-                return False
+    @staticmethod
+    def validate_criminal_record_id(criminal_record_id:int) -> bool:
+        if criminal_record_id is None:
+            return False
+        elif type(criminal_record_id) != int:
+            return False
+        return True
 
-        @staticmethod
-        def validate_hazard_level(hazard_level:int)->bool:
-            if type(hazard_level) == int:
-                if hazard_level>10 or hazard_level<0:
-                 return False
-            else:
-                return False
+    @staticmethod
+    def validate_hazard_level(hazard_level:int)->bool:
+        if type(hazard_level) == int:
+            if hazard_level>10 or hazard_level<0:
+             return False
+        else:
+            return False
+        return True
             
     
     def __repr__(self):
