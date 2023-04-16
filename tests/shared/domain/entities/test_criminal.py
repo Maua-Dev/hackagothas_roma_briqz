@@ -5,7 +5,7 @@ from src.shared.domain.enums.region_enum import REGION
 from src.shared.domain.enums.sex_enum import SEX
 from src.shared.helpers.errors.domain_errors import EntityError
 
-class Test_Criminal:
+class Test_Criminal():
        def test_criminal(self):
               criminal = Criminal(name="Jorginho Bala Tensa", description="Um dos violoes mais temidos de todo o oeste", sex=SEX.MALE, region=REGION.CAPAO_REDONDO, powers=[POWER.MANIAC, POWER.ELITE_SHOOTER])
 
