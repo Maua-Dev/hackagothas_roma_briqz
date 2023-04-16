@@ -1,0 +1,9 @@
+from enum import Enum
+
+class CRIME_TYPE(Enum):
+    HOMICIDE = "HOMICIDE"
+    THEFT = "THEFT"
+    ASSAULT = "ASSAULT"
+    PYRAMID_SCHEME = "PIRAMID_SCHEME"
+    DRUG_TRAFFIC = "DRUG_TRAFFIC"
+    
