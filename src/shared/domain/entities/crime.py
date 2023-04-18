@@ -6,7 +6,7 @@ from src.shared.helpers.errors.domain_errors import EntityError
 
 class Crime(abc.ABC):
     crime_id: int
-    responsable_criminal: Criminal
+    responsable_criminal: Criminal.name
     crime_type: CRIME_TYPE
 
     def __init__(self, crime_id: int, responsable_criminal: Criminal, crime_type:CRIME_TYPE) -> None:
